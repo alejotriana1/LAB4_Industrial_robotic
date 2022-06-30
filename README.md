@@ -45,11 +45,11 @@ It is used to move the TCP of the tool describing a circular trajectory towards 
 MoveC p1, p2, v500, z30, tool2;
 
 Where:
-P1: starting point of the trajectory.
-P2: end point of the trajectory.
-V500: velocity.
-Z30: zone or approach data.
-Tool 2: Tool that will execute the action.
+- p1: starting point of the trajectory.
+- p2: end point of the trajectory.
+- v500: velocity.
+- z30: zone or approach data.
+- tool 2: Tool that will execute the action.
 
 MOVJ: 
 Allows to move the robot from one point to another in an agile way, when the path between the points is not required to be a straight line.
@@ -58,10 +58,10 @@ Structure:
 MoveJ p1, vmax, z30, tool2;
 
 Where: 
-P1: point to which the TCP of the tool should be directed.
-Vmax: velocity.
-Z30: zone or approach data.
-Tool 2: tool that will execute the action.
+- p1: point to which the TCP of the tool should be directed.
+- vmax: velocity.
+- z30: zone or approach data.
+- tool 2: tool that will execute the action.
 
 MOVL:
 
@@ -70,10 +70,10 @@ Allows to move the TCP of the tool to a given point following a straight line. T
 Structure:
 MoveL p1, v1000, z30, tool2;
 Where:
-P1: point to which the TCP of the tool is to be directed.
-V1000: velocity.
-Z30: zone or approach data.
-Tool 2: Tool that will execute the action.
+-p1: point to which the TCP of the tool is to be directed.
+- v1000: velocity.
+- z30: zone or approach data.
+- tool 2: Tool that will execute the action.
 
 Another important element in the development of the module is the definition of constants, with which it was possible to establish in the program the coordinates of the points of interest for the trajectories, as well as the UCS (User Coordinate System), which is the user-defined coordinate system, and allows the creation of customized reference points.
 
