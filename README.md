@@ -119,8 +119,10 @@ the other method is to perform the same procedure virtually in RobotStudio to ge
 
 
 
-## Calibration and Robot control.   (video) 
-
+## Calibration and Robot control. 
+In the following video you can see the physical implementation of the trajectories created in the simulator.
+  
+  https://youtu.be/y8LophET_1k
 
 ## issues 
 robot Configurations cannot be reached in some points of the path, to keep the orientation in some pieces of the path; speccially in the developing of the "S" letter the configurations changes the articulations from positive to negative wrist, at this point , the targets was changed and some orientation parameters was also configured to maintain a fluid path.  
