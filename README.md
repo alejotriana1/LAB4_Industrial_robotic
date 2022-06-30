@@ -126,7 +126,8 @@ the other method is to perform the same procedure virtually in RobotStudio to ge
 robot Configurations cannot be reached in some points of the path, to keep the orientation in some pieces of the path; speccially in the developing of the "S" letter the configurations changes the articulations from positive to negative wrist, at this point , the targets was changed and some orientation parameters was also configured to maintain a fluid path.  
 At the moment the module was loading the flex pendant has shown some problems with the tool
 
-## Conclutions. 
+## Conclusions. 
+  - For the ideal implementation of the trajectories on a reference surface, it is essential that the physical calibration process is meticulous and that the smallest possible error is obtained in the process, this will guarantee that the representations obtained in simulation are correctly transferred to the real world.
 
 ## Bibliography
   - ABB. Manual de referencia técnica. Instrucciones funciones y tipos de datos de RAPID. Recuperado de: http://personal.biada.org/~jhorrillo/INSTRUCCIONS%20RAPID.pdf 
