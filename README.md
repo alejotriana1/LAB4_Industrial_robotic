@@ -30,24 +30,50 @@ The following shows the components and dimensions of the tool.
 
 ## Tool calibration.
 The calibration of the tool can be done in two ways, the first way, the manual way where we already have the tool installed on the robot, with the help of the FlexPendant we will create a new variable where the calibration will be stored.
+We have several options to perform the tool calibration manually, which are chosen from the flexPendant first. We chose the 3-point option, the idea of this option is to position the robot in 3 different poses, at the same point which is located on the tool, stored in figure 2.
+[![tool2.jpg](https://i.postimg.cc/KjrKbXQb/tool2.jpg)](https://postimg.cc/JH07329Y)
+this 3-point method is not very effective as it fails to minimise the error rate, with the following results.
+[![image.png](https://i.postimg.cc/Bny2M0V7/image.png)](https://postimg.cc/0zY6yLx7)
+for a second test we will use 3 points and parallel to the vector Z, this way the system will be more robust and we will be able to minimise the error rate.
+
+the method of calibration of the tool described above is carried out where the following values are obtained:
+
+Max error= 0.96 mm 
+
+min error=0.36 mm
+
+the other method is to perform the same procedure virtually in RobotStudio to get the tool calibration directly in the code.    
+
+
 
 
 ## Simulation in Robot studio. 
 
 Firstly the movement was designed in a piece of paper with some measures and key points; moreover is really important to check the dimensional space where the tool can write over the board.
+[![JSD-PApel.jpg](https://i.postimg.cc/02NDDRvd/JSD-PApel.jpg)](https://postimg.cc/9zvDHkrr)
+
+
 
 Afterwards, the key points were set to construct the letters, with this positional information the letters were set as targets in robotstudio. It's important to set up the correct robot and controller in the station Btw.
 
 As a result the following path was obtained
+[![JSD-Rstudio.jpg](https://i.postimg.cc/t4ZRGDdH/JSD-Rstudio.jpg)](https://postimg.cc/18S1pGYW); also in order to joint these tarjets, MOVEJ and MOVEL was used, it depends on the movemente requirements, basically whether the movement seeks to keep orientation (movel) and keep stable the final efector along a trayectory or not (movej). 
+MoveC was also used to make circular trajectories, in that case, it is needed to have the middle point and the final point of the circular trayectory.
+To set up each trayectory is also requiered to specify the velocity and accuracy of the path.
+
+The tool was also imported in the document, tool calibration supports to have better simulations and results. this tool also has assigned a frame, that it is insert in the workobject of the flange.
+
+Work object is a frame that involves the work space, with this work object the paths and objects can be attached to this frame and all the commands, tarjets, trayectories will be set depending on the configuration of this frame; for instance, 
 
 
 
 
-## Calibration and Robot control.   (video) (we don't have a video o_O ... Well from the part of the tool calibration) --Pictures... Nop ... we have.... NOTHING about calibration, only our words :D
+
+## Calibration and Robot control.   (video) 
 
 
 ## issues 
-
+robot Configurations cannot be reached in some points of the path, to keep the orientation in some pieces of the path; speccially in the developing of the "S" letter the configurations changes the articulations from positive to negative wrist, at this point , the targets was changed and some orientation parameters was also configured to maintain a fluid path.  
 At the moment the module was loading the flex pendant has shown some problems with the tool
 
 ## Conclutions. 
