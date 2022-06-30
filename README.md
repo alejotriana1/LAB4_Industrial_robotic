@@ -134,10 +134,8 @@ At the moment the module was loading the flex pendant has shown some problems wi
 
 ## Conclusions. 
   - For the ideal implementation of the trajectories on a reference surface, it is essential that the physical calibration process is meticulous and that the smallest possible error is obtained in the process, this will guarantee that the representations obtained in simulation are correctly transferred to the real world.
-
-The caution and security rules are strongly recommend to follow, manage this kind of equipement, brings responsabilities in terms of security.
-
-The path control is an iterative process to calibrate and recaculate the start points and trayectories, it depends on the perseption of the personal.
+  - The caution and security rules are strongly recommend to follow, manage this kind of equipement, brings responsabilities in terms of security.
+  - The path control is an iterative process to calibrate and recaculate the start points and trayectories, it depends on the perseption of the personal.
 
 
 
