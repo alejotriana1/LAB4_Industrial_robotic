@@ -94,7 +94,8 @@ To set up each trayectory is also requiered to specify the velocity and accuracy
 
 The tool was also imported in the document, tool calibration supports to have better simulations and results. this tool also has assigned a frame, that it is insert in the workobject of the flange.
 
-Work object is a frame that involves the work space, with this work object the paths and objects can be attached to this frame and all the commands, tarjets, trayectories will be set depending on the configuration of this frame; for instance, the Frame Malla was set in diferent position and orientation to 
+Work object is a frame that involves the work space, with this work object the paths and objects can be attached to this frame and all the commands, tarjets, trayectories will be set depending on the configuration of this frame; for instance, the Frame Malla was set in diferent position and orientation to write in an inclined plane.
+[![imagen-2022-06-29-234002898.png](https://i.postimg.cc/13cddJsJ/imagen-2022-06-29-234002898.png)](https://postimg.cc/tsJDZd1x)
 
 ## Tool calibration.
 The calibration of the tool can be done in two ways, the first way, the manual way where we already have the tool installed on the robot, with the help of the FlexPendant we will create a new variable where the calibration will be stored.
