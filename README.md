@@ -51,7 +51,7 @@ Where:
 - z30: zone or approach data.
 - tool 2: Tool that will execute the action.
 
-MOVJ: 
+### MOVJ: 
 Allows to move the robot from one point to another in an agile way, when the path between the points is not required to be a straight line.
 
 Structure:
@@ -63,7 +63,7 @@ Where:
 - z30: zone or approach data.
 - tool 2: tool that will execute the action.
 
-MOVL:
+### MOVL:
 
 Allows to move the TCP of the tool to a given point following a straight line. This instruction also allows to reorient the tool when you want the TCP to remain stationary.
 
