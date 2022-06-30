@@ -50,11 +50,11 @@ P2: end point of the trajectory.
 V500: velocity.
 Z30: zone or approach data.
 Tool 2: Tool that will execute the action.
-
 MOVJ: 
 Allows to move the robot from one point to another in an agile way, when the path between the points is not required to be a straight line.
 
 Structure:
+  
 MoveJ p1, vmax, z30, tool2;
 
 Where: 
@@ -77,8 +77,6 @@ Tool 2: Tool that will execute the action.
 
 Another important element in the development of the module is the definition of constants, with which it was possible to establish in the program the coordinates of the points of interest for the trajectories, as well as the UCS (User Coordinate System), which is the user-defined coordinate system, and allows the creation of customized reference points.
 
- 
-
 Firstly the movement was designed in a piece of paper with some measures and key points; moreover is really important to check the dimensional space where the tool can write over the board.
 [![JSD-PApel.jpg](https://i.postimg.cc/02NDDRvd/JSD-PApel.jpg)](https://postimg.cc/9zvDHkrr)
 
@@ -93,15 +91,14 @@ To set up each trayectory is also requiered to specify the velocity and accuracy
 
 The tool was also imported in the document, tool calibration supports to have better simulations and results. this tool also has assigned a frame, that it is insert in the workobject of the flange.
 
-Work object is a frame that involves the work space, with this work object the paths and objects can be attached to this frame and all the commands, tarjets, trayectories will be set depending on the configuration of this frame; for instance, 
+Work object is a frame that involves the work space, with this work object the paths and objects can be attached to this frame and all the commands, tarjets, trayectories will be set depending on the configuration of this frame; for instance, the Frame Malla was set in diferent position and orientation to 
 
 ## Tool calibration.
 The calibration of the tool can be done in two ways, the first way, the manual way where we already have the tool installed on the robot, with the help of the FlexPendant we will create a new variable where the calibration will be stored.
 We have several options to perform the tool calibration manually, which are chosen from the flexPendant first. We chose the 3-point option, the idea of this option is to position the robot in 3 different poses, at the same point which is located on the tool, stored in figure 2.
 [![image.png](https://i.postimg.cc/FKG7sffB/image.png)](https://postimg.cc/PLptS5QW)
-  
-this 3-point method is not very effective as it fails to minimise the error rate, with the following results.
-  
+
+this 3-point method is not very effective as it fails to minimise the error rate, with the following results.   
 [![image.png](https://i.postimg.cc/ZRV3g7F0/image.png)](https://postimg.cc/2bLVLxtf)
 for a second test we will use 3 points and parallel to the vector Z, this way the system will be more robust and we will be able to minimise the error rate.
 
@@ -125,9 +122,16 @@ the other method is to perform the same procedure virtually in RobotStudio to ge
 ## issues 
 robot Configurations cannot be reached in some points of the path, to keep the orientation in some pieces of the path; speccially in the developing of the "S" letter the configurations changes the articulations from positive to negative wrist, at this point , the targets was changed and some orientation parameters was also configured to maintain a fluid path.  
 At the moment the module was loading the flex pendant has shown some problems with the tool
+Robot Configurations cannot be reached in some points of the path, to keep the orientation in some pieces of the path; speccially in the developing of the "S" letter the configurations changes the articulations from positive to negative wrist, at this point , the targets was changed and some orientation parameters was also configured to maintain a fluid path.    
+At the moment the module was loading the flex pendant has shown some problems with the tool, this problem is due to rebundant tooldata in the pendant, because the uses of the tools calibration data in numerous modules.
 
 ## Conclutions. 
 
+The caution and security rules are strongly recommend to follow, manage this kind of equipement, brings responsabilities in terms of security.
+
+The path control is an iterative process to calibrate and recaculate the start points and trayectories, it depends on the perseption of the personal.
+
+
+
 ## Bibliography
   - ABB. Manual de referencia técnica. Instrucciones funciones y tipos de datos de RAPID. Recuperado de: http://personal.biada.org/~jhorrillo/INSTRUCCIONS%20RAPID.pdf 
-
