@@ -1,9 +1,13 @@
 # LAB4_Industrial_robotic
 
 Universidad Nacional de Colombia
+
 Robótica
 
 ## Authors:
+- Javier Caicedo Pedrozo
+- Diego Chacón 
+- Alejadro Triana
 
 
 ## Tool design.
@@ -16,16 +20,16 @@ For the development of the tool we took into account the dimensions of the flang
 
 The following shows the components and dimensions of the tool.
 
-Tool dimensions: [Dimensions in mm]
+### Tool dimensions: [Dimensions in mm]
 <p align="center"><img src="https://i.postimg.cc/3JxJy8Rb/tool-medidas.png"</p>
 
-Dimensions of the cover:
+### Dimensions of the cover:
 <p align="center"><img src="https://i.postimg.cc/0jckt3tf/medidas-tapa.png"</p>
 
-3D geometry of the tool:
+### 3D geometry of the tool:
 <p align="center"><img src="https://i.postimg.cc/L8q9Txjt/modelo3D.png"</p>
 
-Real aspect of the tool:
+### Real aspect of the tool:
 <p align="center"><img src="https://i.postimg.cc/J4Y7ZfH7/tool-fis1.jpg"</p>
 <p align="center"><img src="https://i.postimg.cc/tR54CZXx/tool-fis2.jpg"</p>
 
