@@ -98,9 +98,9 @@ Work object is a frame that involves the work space, with this work object the p
 ## Tool calibration.
 The calibration of the tool can be done in two ways, the first way, the manual way where we already have the tool installed on the robot, with the help of the FlexPendant we will create a new variable where the calibration will be stored.
 We have several options to perform the tool calibration manually, which are chosen from the flexPendant first. We chose the 3-point option, the idea of this option is to position the robot in 3 different poses, at the same point which is located on the tool, stored in figure 2.
-[![tool2.jpg](https://i.postimg.cc/KjrKbXQb/tool2.jpg)](https://postimg.cc/JH07329Y)
+[![image.png](https://i.postimg.cc/FKG7sffB/image.png)](https://postimg.cc/PLptS5QW)
 this 3-point method is not very effective as it fails to minimise the error rate, with the following results.
-[![image.png](https://i.postimg.cc/Bny2M0V7/image.png)](https://postimg.cc/0zY6yLx7)
+[![image.png](https://i.postimg.cc/ZRV3g7F0/image.png)](https://postimg.cc/2bLVLxtf)
 for a second test we will use 3 points and parallel to the vector Z, this way the system will be more robust and we will be able to minimise the error rate.
 
 the method of calibration of the tool described above is carried out where the following values are obtained:
