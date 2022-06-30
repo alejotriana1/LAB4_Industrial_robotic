@@ -58,22 +58,22 @@ Structure:
 MoveJ p1, vmax, z30, tool2;
 
 Where: 
-P1: point to which the TCP of the tool should be directed.
-Vmax: velocity.
-Z30: zone or approach data.
-Tool 2: tool that will execute the action.
+- p1: point to which the TCP of the tool should be directed.
+- vmax: velocity.
+- z30: zone or approach data.
+- tool 2: tool that will execute the action.
 
-MOVL:
+### MOVL:
 
 Allows to move the TCP of the tool to a given point following a straight line. This instruction also allows to reorient the tool when you want the TCP to remain stationary.
 
 Structure:
 MoveL p1, v1000, z30, tool2;
 Where:
-P1: point to which the TCP of the tool is to be directed.
-V1000: velocity.
-Z30: zone or approach data.
-Tool 2: Tool that will execute the action.
+-p1: point to which the TCP of the tool is to be directed.
+- v1000: velocity.
+- z30: zone or approach data.
+- tool 2: Tool that will execute the action.
 
 Another important element in the development of the module is the definition of constants, with which it was possible to establish in the program the coordinates of the points of interest for the trajectories, as well as the UCS (User Coordinate System), which is the user-defined coordinate system, and allows the creation of customized reference points.
 
@@ -83,8 +83,11 @@ Firstly the movement was designed in a piece of paper with some measures and key
 
 
 
-As a result the following path was obtained
-[![JSD-Rstudio.jpg](https://i.postimg.cc/t4ZRGDdH/JSD-Rstudio.jpg)](https://postimg.cc/18S1pGYW); also in order to joint these tarjets, MOVEJ and MOVEL was used, it depends on the movemente requirements, basically whether the movement seeks to keep orientation (movel) and keep stable the final efector along a trayectory or not (movej). 
+As a result the following path was obtained;
+  
+[![JSD-Rstudio.jpg](https://i.postimg.cc/t4ZRGDdH/JSD-Rstudio.jpg)](https://postimg.cc/18S1pGYW)
+
+also in order to joint these tarjets, MOVEJ and MOVEL was used, it depends on the movemente requirements, basically whether the movement seeks to keep orientation (movel) and keep stable the final efector along a trayectory or not (movej). 
 MoveC was also used to make circular trajectories, in that case, it is needed to have the middle point and the final point of the circular trayectory.
 
 To set up each trayectory is also requiered to specify the velocity and accuracy of the path.
@@ -100,6 +103,7 @@ We have several options to perform the tool calibration manually, which are chos
 
 this 3-point method is not very effective as it fails to minimise the error rate, with the following results.   
 [![image.png](https://i.postimg.cc/ZRV3g7F0/image.png)](https://postimg.cc/2bLVLxtf)
+  
 for a second test we will use 3 points and parallel to the vector Z, this way the system will be more robust and we will be able to minimise the error rate.
 
 the method of calibration of the tool described above is carried out where the following values are obtained:
@@ -116,8 +120,10 @@ the other method is to perform the same procedure virtually in RobotStudio to ge
 
 
 
-## Calibration and Robot control.   (video) 
-
+## Calibration and Robot control. 
+In the following video you can see the physical implementation of the trajectories created in the simulator.
+  
+  https://youtu.be/y8LophET_1k
 
 ## issues 
 robot Configurations cannot be reached in some points of the path, to keep the orientation in some pieces of the path; speccially in the developing of the "S" letter the configurations changes the articulations from positive to negative wrist, at this point , the targets was changed and some orientation parameters was also configured to maintain a fluid path.  
@@ -125,7 +131,8 @@ At the moment the module was loading the flex pendant has shown some problems wi
 Robot Configurations cannot be reached in some points of the path, to keep the orientation in some pieces of the path; speccially in the developing of the "S" letter the configurations changes the articulations from positive to negative wrist, at this point , the targets was changed and some orientation parameters was also configured to maintain a fluid path.    
 At the moment the module was loading the flex pendant has shown some problems with the tool, this problem is due to rebundant tooldata in the pendant, because the uses of the tools calibration data in numerous modules.
 
-## Conclutions. 
+## Conclusions. 
+  - For the ideal implementation of the trajectories on a reference surface, it is essential that the physical calibration process is meticulous and that the smallest possible error is obtained in the process, this will guarantee that the representations obtained in simulation are correctly transferred to the real world.
 
 The caution and security rules are strongly recommend to follow, manage this kind of equipement, brings responsabilities in terms of security.
 
