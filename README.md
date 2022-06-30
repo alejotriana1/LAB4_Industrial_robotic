@@ -45,15 +45,39 @@ It is used to move the TCP of the tool describing a circular trajectory towards 
 MoveC p1, p2, v500, z30, tool2;
 
 Where:
-- p1: starting point of the trajectory.
-- p2: end point of the trajectory.
-- v500: velocity.
-- z30: zone or approach data.
-- tool 2: Tool that will execute the action.
+P1: starting point of the trajectory.
+P2: end point of the trajectory.
+V500: velocity.
+Z30: zone or approach data.
+Tool 2: Tool that will execute the action.
+
+MOVJ: 
+Allows to move the robot from one point to another in an agile way, when the path between the points is not required to be a straight line.
 
 Structure:
-  
 MoveJ p1, vmax, z30, tool2;
+
+Where: 
+P1: point to which the TCP of the tool should be directed.
+Vmax: velocity.
+Z30: zone or approach data.
+Tool 2: tool that will execute the action.
+
+MOVL:
+
+Allows to move the TCP of the tool to a given point following a straight line. This instruction also allows to reorient the tool when you want the TCP to remain stationary.
+
+Structure:
+MoveL p1, v1000, z30, tool2;
+Where:
+P1: point to which the TCP of the tool is to be directed.
+V1000: velocity.
+Z30: zone or approach data.
+Tool 2: Tool that will execute the action.
+
+Another important element in the development of the module is the definition of constants, with which it was possible to establish in the program the coordinates of the points of interest for the trajectories, as well as the UCS (User Coordinate System), which is the user-defined coordinate system, and allows the creation of customized reference points.
+
+ 
 
 Firstly the movement was designed in a piece of paper with some measures and key points; moreover is really important to check the dimensional space where the tool can write over the board.
 [![JSD-PApel.jpg](https://i.postimg.cc/02NDDRvd/JSD-PApel.jpg)](https://postimg.cc/9zvDHkrr)
@@ -102,4 +126,6 @@ At the moment the module was loading the flex pendant has shown some problems wi
 
 ## Conclutions. 
 
+## Bibliography
+  - ABB. Manual de referencia técnica. Instrucciones funciones y tipos de datos de RAPID. Recuperado de: http://personal.biada.org/~jhorrillo/INSTRUCCIONS%20RAPID.pdf 
 
